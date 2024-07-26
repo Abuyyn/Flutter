@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const DataPenjualan = require('../models/datapenjualan');
-const Hewan = require('../models/hewan');
+const Hewan = require('../models/Hewan');
 
 // Mengambil semua entri DataPenjualan
 router.get('/', async (req, res) => {

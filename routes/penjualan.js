@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const Penjualan = require('../models/penjualan');
-const Hewan = require('../models/hewan');
+const Hewan = require('../models/Hewan');
 const User = require('../models/User');
 const { formatRupiah } = require('../utils/format');
 

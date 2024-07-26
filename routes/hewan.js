@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const { authenticateToken, authorizeRole } = require('../middleware/authenticate');
-const Hewan = require('../models/hewan');
+const Hewan = require('../models/Hewan');
 const User = require('../models/User');  // Pastikan ini diimpor
 const { formatRupiah } = require('../utils/format');
 
