@@ -1,0 +1,32 @@
+POST http://localhost:3000/penjualan
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6InBlbmp1YWwiLCJpYXQiOjE3MjE5MDcyNTcsImV4cCI6MTcyMTkxMDg1N30.WKjjBwMecqccbfh_6ZAH43iP5tjPNJeOrGkIQ2PetMA
+
+{
+  "tanggal": "2024-07-24T00:00:00Z",
+  "total": 5000000,
+  "hewanID": 1,
+  "penjualID": 1,
+  "jumlah": 1
+}
+
+### Mengambil semua penjualan
+GET http://localhost:3000/penjualan
+
+### Mengambil penjualan berdasarkan ID
+GET http://localhost:3000/penjualan/8
+
+### Memperbarui penjualan berdasarkan ID
+PUT http://localhost:3000/penjualan/8
+Content-Type: application/json
+
+{
+  "tanggal": "2024-07-25T00:00:00Z",
+  "total": 6000000,
+  "hewanID": 2,
+  "penjualID": 1,
+  "jumlah": 2
+}
+
+### Menghapus penjualan berdasarkan ID
+DELETE http://localhost:3000/penjualan/2

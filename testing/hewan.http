@@ -1,0 +1,32 @@
+### Test: POST /hewan (Create new hewan)
+POST http://localhost:3000/hewan
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Miwicm9sZSI6InBlbmp1YWwiLCJpYXQiOjE3MjE5Mjc1MzgsImV4cCI6MTcyMTkzMTEzOH0.XhPkQmfUp55D9QEbGp9km8Rla1EU1HOQ1yKTWmL47kc
+
+{
+  "jenis": "Sapi",
+  "umur": "2 tahun",
+  "harga": 5000000
+}
+
+### Test: GET /hewan (Get all hewan)
+GET http://localhost:3000/hewan
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Miwicm9sZSI6InBlbmp1YWwiLCJpYXQiOjE3MjE5Mjc1MzgsImV4cCI6MTcyMTkzMTEzOH0.XhPkQmfUp55D9QEbGp9km8Rla1EU1HOQ1yKTWmL47kc
+### Test: GET /hewan/:id (Get hewan by ID)
+GET http://localhost:3000/hewan/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Miwicm9sZSI6InBlbmp1YWwiLCJpYXQiOjE3MjE5Mjc1MzgsImV4cCI6MTcyMTkzMTEzOH0.XhPkQmfUp55D9QEbGp9km8Rla1EU1HOQ1yKTWmL47kc
+
+### Test: PUT /hewan/:id (Update hewan by ID)
+PUT http://localhost:3000/hewan/1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Miwicm9sZSI6InBlbmp1YWwiLCJpYXQiOjE3MjE5MDY2NDUsImV4cCI6MTcyMTkxMDI0NX0.JwR3BQdI0XFrOQIWXfpR4WGEDiLp36cVWbTgjAryhlA
+
+{
+  "jenis": "Kambing",
+  "umur": 3,
+  "harga": 3000000
+}
+
+### Test: DELETE /hewan/:id (Delete hewan by ID)
+DELETE http://localhost:3000/hewan/7
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Miwicm9sZSI6InBlbmp1YWwiLCJpYXQiOjE3MjE5MDY2NDUsImV4cCI6MTcyMTkxMDI0NX0.JwR3BQdI0XFrOQIWXfpR4WGEDiLp36cVWbTgjAryhlA  

@@ -1,0 +1,13 @@
+
+
+### Menguji endpoint GET untuk mengambil semua entri pembeli
+GET http://localhost:3000/pembeli
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6InBlbmp1YWwiLCJpYXQiOjE3MjE5MDcyNTcsImV4cCI6MTcyMTkxMDg1N30.WKjjBwMecqccbfh_6ZAH43iP5tjPNJeOrGkIQ2PetMA
+
+
+### Menguji endpoint GET untuk mengambil entri pembeli berdasarkan ID
+GET http://localhost:3000/pembeli/1
+
+
+### Menguji endpoint DELETE untuk menghapus entri pembeli berdasarkan ID
+DELETE http://localhost:3000/pembeli/1

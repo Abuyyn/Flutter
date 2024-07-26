@@ -1,0 +1,45 @@
+### Register User
+POST http://localhost:3000/auth/register
+Content-Type: application/json
+
+{
+  "nama": "Jo",
+  "username": "johnddo",
+  "password": "password123",
+  "role": "pembeli",
+  "alamat": "123 Main St",
+  "nomorHp": "08123456789"
+}
+
+### Login User
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+  "username": "johnddo",
+  "password": "password123"
+}
+
+
+### Register Admin
+POST http://localhost:3000/auth/register
+Content-Type: application/json
+
+
+{
+  "nama": "Jsffw",
+  "username": "abusW",
+  "password": "password123",
+  "role": "penjual",
+  "alamat": "123 Main St",
+  "nomorHp": "08123456789"
+}
+
+### Login Admin
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+  "username": "abusW",
+  "password": "password123"
+}

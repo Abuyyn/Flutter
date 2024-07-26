@@ -1,0 +1,39 @@
+## Membuat pesanan baru
+POST# http://localhost:3000/pesanan
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6InBlbWJlbGkiLCJpYXQiOjE3MjE5Mjc1MTUsImV4cCI6MTcyMTkzMTExNX0.kTDWBsOv5qZOp-8V0J7vee3MwYR9pluCRW67OQ8Pw6Y
+
+{
+  "tanggal": "2024-07-25",
+  "hewanID": 1,
+  "pembeliID": 1,
+  "jumlah": 2
+}
+
+
+### Mengambil semua pesanan
+GET http://localhost:3000/pesanan
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Miwicm9sZSI6InBlbWJlbGkiLCJpYXQiOjE3MjE5MDc5NjcsImV4cCI6MTcyMTkxMTU2N30.i0rwmg8Nl_FvYVv8JC3VCGMNSEJzintkbY92sGxxmSw
+
+### Mengambil pesanan berdasarkan ID
+GET http://localhost:3000/pesanan/2
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Miwicm9sZSI6InBlbWJlbGkiLCJpYXQiOjE3MjE5MDc5NjcsImV4cCI6MTcyMTkxMTU2N30.i0rwmg8Nl_FvYVv8JC3VCGMNSEJzintkbY92sGxxmSw
+
+### Memperbarui pesanan berdasarkan ID
+PUT http://localhost:3000/pesanan/2
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Miwicm9sZSI6InBlbWJlbGkiLCJpYXQiOjE3MjE5MDc5NjcsImV4cCI6MTcyMTkxMTU2N30.i0rwmg8Nl_FvYVv8JC3VCGMNSEJzintkbY92sGxxmSw
+
+{
+  "tanggal": "2024-07-25T00:00:00Z",
+  "hewanID": 1,
+  "pembeliID": 1,
+  "harga": 6000000,
+  "jenis": "Kambing",
+  "jumlah": 2,
+  "total": 12000000
+}
+
+### Menghapus pesanan berdasarkan ID
+DELETE http://localhost:3000/pesanan/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6InBlbWJlbGkiLCJpYXQiOjE3MjE4OTQ2MTUsImV4cCI6MTcyMTg5ODIxNX0.BmWJNcswcHkDp_I-cB1PIkv1quLSDWhVnVmbqMnqhqc
