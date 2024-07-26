@@ -9,7 +9,7 @@ const sequelize = require('./models/index');
 // Models
 const User = require('./models/User');
 const Pembeli = require('./models/pembeli');
-const Hewan = require('./models/hewan');
+const Hewan = require('./models/Hewan');
 const Penjualan = require('./models/penjualan');
 const DataPenjualan = require('./models/datapenjualan');
 const Pesanan = require('./models/pesanan');
