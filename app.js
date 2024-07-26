@@ -5,6 +5,7 @@ const logger = require('morgan');
 const bodyParser = require('body-parser');
 const createError = require('http-errors');
 const sequelize = require('./models/index');
+require("dotenv").config()
 
 // Models
 const User = require('./models/User');
@@ -48,15 +49,16 @@ const penjualanRouter = require('./routes/penjualan');
 const dataPenjualanRouter = require('./routes/datapenjualan');
 const pesananRouter = require('./routes/pesanan');
 
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'jade');
+const PORT = process.env.PORT || 3000
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`)
+})
 
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/auth', authRouter);
 app.use('/pembeli', pembeliRouter);
@@ -73,6 +75,8 @@ sequelize.authenticate()
     .then(() => console.log('Database connection has been established successfully.'))
     .catch(err => console.error('Unable to connect to the database:', err));
 
+
+
 app.use(function(req, res, next) {
   next(createError(404));
 });
@@ -82,7 +86,7 @@ app.use(function(err, req, res, next) {
   res.locals.error = req.app.get('env') === 'development' ? err : {};
 
   res.status(err.status || 500);
-  res.render('error');
+  res.sendStatus(404);
 });
 
 module.exports = app;

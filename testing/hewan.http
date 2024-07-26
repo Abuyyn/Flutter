@@ -1,10 +1,10 @@
 ### Test: POST /hewan (Create new hewan)
 POST http://localhost:3000/hewan
-Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Miwicm9sZSI6InBlbmp1YWwiLCJpYXQiOjE3MjE5ODEzMjAsImV4cCI6MTcyMTk4NDkyMH0.ki46PAmdVI-QXWIznlsrMfNxYV3iGl_UxkiRdS6ugo0
+Content-Type: application/json 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwicm9sZSI6InBlbmp1YWwiLCJpYXQiOjE3MjE5OTI5MjEsImV4cCI6MTcyMTk5NjUyMX0.e-82rhyMMcyjxqLYMFHE7oBmcEkoFJpSGwopcElio9Y
 
 {
-  "jenis": "Sapi",
+  "jenis": "Kambing",
   "umur": "2 tahun",
   "harga": 5000000
 }

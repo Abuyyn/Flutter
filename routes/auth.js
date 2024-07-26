@@ -3,6 +3,8 @@ const router = express.Router();
 const jwt = require('jsonwebtoken');
 const User = require('../models/User');
 const bcrypt = require('bcryptjs');
+require("dotenv").config()
+
 const { authenticateToken, authorizeRole } = require('../middleware/authenticate');
 
 // Register

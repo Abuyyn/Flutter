@@ -16,7 +16,7 @@ POST http://localhost:3000/auth/login
 Content-Type: application/json
 
 {
-  "username": "johso",
+  "username": "jaassaa",
   "password": "password123"
 }
 
@@ -28,7 +28,7 @@ Content-Type: application/json
 
 {
   "nama": "Jsffw",
-  "username": "abusW",
+  "username": "abuysW",
   "password": "password123",
   "role": "penjual",
   "alamat": "123 Main St",
@@ -40,6 +40,6 @@ POST http://localhost:3000/auth/login
 Content-Type: application/json
 
 {
-  "username": "abusW",
+  "username": "abuysW",
   "password": "password123"
 }
