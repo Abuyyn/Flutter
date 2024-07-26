@@ -49,6 +49,9 @@ const penjualanRouter = require('./routes/penjualan');
 const dataPenjualanRouter = require('./routes/datapenjualan');
 const pesananRouter = require('./routes/pesanan');
 
+app.get('/', (req, res, next) => {
+  res.send('Selamat datang di Aplikasi Kurban Sejahtera')
+})
 const PORT = process.env.PORT || 3000
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`)
