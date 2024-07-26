@@ -1,6 +1,6 @@
 const { DataTypes } = require('sequelize');
 const sequelize = require('./index'); 
-const Hewan = require('./hewan');
+const Hewan = require('./Hewan');
 
 const DataPenjualan = sequelize.define('DataPenjualan', {
     dataPenjualanID: {

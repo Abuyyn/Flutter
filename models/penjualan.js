@@ -1,7 +1,7 @@
 const { DataTypes } = require('sequelize');
 const sequelize = require('./index');
 const Penjual = require('./penjual'); // Update ke Penjual
-const Hewan = require('./hewan');
+const Hewan = require('./Hewan');
 const DataPenjualan = require('./datapenjualan');
 
 const Penjualan = sequelize.define('Penjualan', {
