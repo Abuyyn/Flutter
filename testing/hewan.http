@@ -1,7 +1,7 @@
 ### Test: POST /hewan (Create new hewan)
 POST http://localhost:3000/hewan
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Miwicm9sZSI6InBlbmp1YWwiLCJpYXQiOjE3MjE5Mjc1MzgsImV4cCI6MTcyMTkzMTEzOH0.XhPkQmfUp55D9QEbGp9km8Rla1EU1HOQ1yKTWmL47kc
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Miwicm9sZSI6InBlbmp1YWwiLCJpYXQiOjE3MjE5ODEzMjAsImV4cCI6MTcyMTk4NDkyMH0.ki46PAmdVI-QXWIznlsrMfNxYV3iGl_UxkiRdS6ugo0
 
 {
   "jenis": "Sapi",

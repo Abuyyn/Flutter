@@ -3,8 +3,8 @@ POST http://localhost:3000/auth/register
 Content-Type: application/json
 
 {
-  "nama": "Jo",
-  "username": "johnddo",
+  "nama": "sqoq",
+  "username": "jaassaa",
   "password": "password123",
   "role": "pembeli",
   "alamat": "123 Main St",
@@ -16,7 +16,7 @@ POST http://localhost:3000/auth/login
 Content-Type: application/json
 
 {
-  "username": "johnddo",
+  "username": "johso",
   "password": "password123"
 }
 

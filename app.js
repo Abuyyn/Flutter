@@ -19,9 +19,10 @@ const app = express();
 
 // Associations
 User.hasOne(Pembeli, { foreignKey: 'userID' });
+User.hasOne(Penjual, { foreignKey: 'userID' });
 Pembeli.belongsTo(User, { foreignKey: 'userID' });
 
-User.hasOne(Penjual, { foreignKey: 'userID' });
+
 Penjual.belongsTo(User, { foreignKey: 'userID' });
 
 Penjual.hasMany(Penjualan, { foreignKey: 'penjualID' });

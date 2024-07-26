@@ -1,6 +1,6 @@
 POST http://localhost:3000/penjualan
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6InBlbmp1YWwiLCJpYXQiOjE3MjE5MDcyNTcsImV4cCI6MTcyMTkxMDg1N30.WKjjBwMecqccbfh_6ZAH43iP5tjPNJeOrGkIQ2PetMA
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Miwicm9sZSI6InBlbmp1YWwiLCJpYXQiOjE3MjE5ODEzMjAsImV4cCI6MTcyMTk4NDkyMH0.ki46PAmdVI-QXWIznlsrMfNxYV3iGl_UxkiRdS6ugo0
 
 {
   "tanggal": "2024-07-24T00:00:00Z",

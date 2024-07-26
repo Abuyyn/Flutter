@@ -1,7 +1,7 @@
 ## Membuat pesanan baru
 POST# http://localhost:3000/pesanan
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6InBlbWJlbGkiLCJpYXQiOjE3MjE5Mjc1MTUsImV4cCI6MTcyMTkzMTExNX0.kTDWBsOv5qZOp-8V0J7vee3MwYR9pluCRW67OQ8Pw6Y
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OCwicm9sZSI6InBlbWJlbGkiLCJpYXQiOjE3MjE5ODEyODksImV4cCI6MTcyMTk4NDg4OX0.ThJANJKUVr-js1Vi4EPhv_PkV8_Md7QkjQDvNtYj0HY
 
 {
   "tanggal": "2024-07-25",
