@@ -1,0 +1,192 @@
+//AUTH
+### Register User
+POST https://kurbansejahtera-api.up.railway.app/auth/register
+Content-Type: application/json
+
+{
+  "nama": "sqoq",
+  "username": "jaassaa",
+  "password": "password123",
+  "role": "pembeli",
+  "alamat": "123 Main St",
+  "nomorHp": "08123456789"
+}
+
+### Login User
+POST https://kurbansejahtera-api.up.railway.app/auth/login
+Content-Type: application/json
+
+{
+  "username": "jaassaa",
+  "password": "password123"
+}
+
+
+### Register Admin
+POST https://kurbansejahtera-api.up.railway.app/auth/register
+Content-Type: application/json
+
+
+{
+  "nama": "Jsffw",
+  "username": "abuysW",
+  "password": "password123",
+  "role": "penjual",
+  "alamat": "123 Main St",
+  "nomorHp": "08123456789"
+}
+
+### Login Admin
+POST https://kurbansejahtera-api.up.railway.app/auth/login
+Content-Type: application/json
+
+{
+  "username": "abuysW",
+  "password": "password123"
+}
+
+
+
+
+
+//HEWAN.JS
+### Test: POST /hewan (Create new hewan)
+POST https://kurbansejahtera-api.up.railway.app/hewan
+Content-Type: application/json 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwicm9sZSI6InBlbmp1YWwiLCJpYXQiOjE3MjE5OTk1ODIsImV4cCI6MTcyMjAwMzE4Mn0.qaA5vmZ4bS8W61i_VAGxcQqdzPHvkbxhh5WcLweYDaY
+
+{
+  "jenis": "Kambing",
+  "umur": "2 tahun",
+  "harga": 5000000
+}
+
+### Test: GET /hewan (Get all hewan)
+GET https://kurbansejahtera-api.up.railway.app/hewan
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwicm9sZSI6InBlbmp1YWwiLCJpYXQiOjE3MjE5OTk1ODIsImV4cCI6MTcyMjAwMzE4Mn0.qaA5vmZ4bS8W61i_VAGxcQqdzPHvkbxhh5WcLweYDaY
+### Test: GET /hewan/:id (Get hewan by ID)
+GET https://kurbansejahtera-api.up.railway.app/hewan/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwicm9sZSI6InBlbmp1YWwiLCJpYXQiOjE3MjE5OTk1ODIsImV4cCI6MTcyMjAwMzE4Mn0.qaA5vmZ4bS8W61i_VAGxcQqdzPHvkbxhh5WcLweYDaY
+
+### Test: PUT /hewan/:id (Update hewan by ID)
+PUT https://kurbansejahtera-api.up.railway.app/hewan/2
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwicm9sZSI6InBlbmp1YWwiLCJpYXQiOjE3MjE5OTk1ODIsImV4cCI6MTcyMjAwMzE4Mn0.qaA5vmZ4bS8W61i_VAGxcQqdzPHvkbxhh5WcLweYDaY
+
+{
+  "jenis": "Kambing",
+  "umur": 3,
+  "harga": 3000000
+}
+
+### Test: DELETE /hewan/:id (Delete hewan by ID)
+DELETE https://kurbansejahtera-api.up.railway.app/hewan/7
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Miwicm9sZSI6InBlbmp1YWwiLCJpYXQiOjE3MjE5MDY2NDUsImV4cCI6MTcyMTkxMDI0NX0.JwR3BQdI0XFrOQIWXfpR4WGEDiLp36cVWbTgjAryhlA  
+
+
+//Penjualan.js
+POST https://kurbansejahtera-api.up.railway.app/penjualan
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwicm9sZSI6InBlbmp1YWwiLCJpYXQiOjE3MjE5OTI5MjEsImV4cCI6MTcyMTk5NjUyMX0.e-82rhyMMcyjxqLYMFHE7oBmcEkoFJpSGwopcElio9Y
+{
+  "tanggal": "2024-07-24T00:00:00Z",
+  "total": 5000000,
+  "hewanID": 3,
+  "penjualID": 1,
+  "jumlah": 1
+}
+
+### Mengambil semua penjualan
+GET https://kurbansejahtera-api.up.railway.app/penjualan
+
+### Mengambil penjualan berdasarkan ID
+GET https://kurbansejahtera-api.up.railway.app/penjualan/8
+
+### Memperbarui penjualan berdasarkan ID
+PUT https://kurbansejahtera-api.up.railway.app/penjualan/8
+Content-Type: application/json
+
+{
+  "tanggal": "2024-07-25T00:00:00Z",
+  "total": 6000000,
+  "hewanID": 2,
+  "penjualID": 1,
+  "jumlah": 2
+}
+
+### Menghapus penjualan berdasarkan ID
+DELETE https://kurbansejahtera-api.up.railway.app/penjualan/2
+
+
+
+
+//DATA PENJUALAN.js
+### Mengambil semua entri DataPenjualan
+GET https://kurbansejahtera-api.up.railway.app/datapenjualan
+Accept: application/json
+
+### Mengambil DataPenjualan berdasarkan ID
+GET https://kurbansejahtera-api.up.railway.app/datapenjualan/1
+Accept: application/json
+
+### Menghapus DataPenjualan berdasarkan ID
+DELETE https://kurbansejahtera-api.up.railway.app/datapenjualan/1
+Accept: application/json
+
+
+
+//pembeli.js
+
+### Menguji endpoint GET untuk mengambil semua entri pembeli
+GET https://kurbansejahtera-api.up.railway.app/pembeli
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwicm9sZSI6InBlbmp1YWwiLCJpYXQiOjE3MjIwMDA4ODgsImV4cCI6MTcyMjAwNDQ4OH0.kS0nbowEMnCzOetm0tvZ3FCbxyICL3r2RwIye7GeZrM
+
+
+### Menguji endpoint GET untuk mengambil entri pembeli berdasarkan ID
+GET https://kurbansejahtera-api.up.railway.app/pembeli/1
+
+
+### Menguji endpoint DELETE untuk menghapus entri pembeli berdasarkan ID
+DELETE https://kurbansejahtera-api.up.railway.app/pembeli/1
+
+
+//Pesanan.js
+## Membuat pesanan baru
+POST# https://kurbansejahtera-api.up.railway.app/pesanan
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OCwicm9sZSI6InBlbWJlbGkiLCJpYXQiOjE3MjE5ODEyODksImV4cCI6MTcyMTk4NDg4OX0.ThJANJKUVr-js1Vi4EPhv_PkV8_Md7QkjQDvNtYj0HY
+
+{
+  "tanggal": "2024-07-25",
+  "hewanID": 1,
+  "pembeliID": 1,
+  "jumlah": 2
+}
+
+
+### Mengambil semua pesanan
+GET https://kurbansejahtera-api.up.railway.app/pesanan
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Miwicm9sZSI6InBlbWJlbGkiLCJpYXQiOjE3MjE5MDc5NjcsImV4cCI6MTcyMTkxMTU2N30.i0rwmg8Nl_FvYVv8JC3VCGMNSEJzintkbY92sGxxmSw
+
+### Mengambil pesanan berdasarkan ID
+GET https://kurbansejahtera-api.up.railway.app/pesanan/2
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Miwicm9sZSI6InBlbWJlbGkiLCJpYXQiOjE3MjE5MDc5NjcsImV4cCI6MTcyMTkxMTU2N30.i0rwmg8Nl_FvYVv8JC3VCGMNSEJzintkbY92sGxxmSw
+
+### Memperbarui pesanan berdasarkan ID
+PUT https://kurbansejahtera-api.up.railway.app/pesanan/2
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Miwicm9sZSI6InBlbWJlbGkiLCJpYXQiOjE3MjE5MDc5NjcsImV4cCI6MTcyMTkxMTU2N30.i0rwmg8Nl_FvYVv8JC3VCGMNSEJzintkbY92sGxxmSw
+
+{
+  "tanggal": "2024-07-25T00:00:00Z",
+  "hewanID": 1,
+  "pembeliID": 1,
+  "harga": 6000000,
+  "jenis": "Kambing",
+  "jumlah": 2,
+  "total": 12000000
+}
+
+### Menghapus pesanan berdasarkan ID
+DELETE https://kurbansejahtera-api.up.railway.app/pesanan/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6InBlbWJlbGkiLCJpYXQiOjE3MjE4OTQ2MTUsImV4cCI6MTcyMTg5ODIxNX0.BmWJNcswcHkDp_I-cB1PIkv1quLSDWhVnVmbqMnqhqc
