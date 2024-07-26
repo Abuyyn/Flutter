@@ -1,5 +1,5 @@
 ## Membuat pesanan baru
-POST# http://localhost:3000/pesanan
+POST# https://kurbansejahtera-api.up.railway.app/pesanan
 Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OCwicm9sZSI6InBlbWJlbGkiLCJpYXQiOjE3MjE5ODEyODksImV4cCI6MTcyMTk4NDg4OX0.ThJANJKUVr-js1Vi4EPhv_PkV8_Md7QkjQDvNtYj0HY
 
@@ -12,15 +12,15 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OCwicm9sZSI6I
 
 
 ### Mengambil semua pesanan
-GET http://localhost:3000/pesanan
+GET https://kurbansejahtera-api.up.railway.app/pesanan
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Miwicm9sZSI6InBlbWJlbGkiLCJpYXQiOjE3MjE5MDc5NjcsImV4cCI6MTcyMTkxMTU2N30.i0rwmg8Nl_FvYVv8JC3VCGMNSEJzintkbY92sGxxmSw
 
 ### Mengambil pesanan berdasarkan ID
-GET http://localhost:3000/pesanan/2
+GET https://kurbansejahtera-api.up.railway.app/pesanan/2
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Miwicm9sZSI6InBlbWJlbGkiLCJpYXQiOjE3MjE5MDc5NjcsImV4cCI6MTcyMTkxMTU2N30.i0rwmg8Nl_FvYVv8JC3VCGMNSEJzintkbY92sGxxmSw
 
 ### Memperbarui pesanan berdasarkan ID
-PUT http://localhost:3000/pesanan/2
+PUT https://kurbansejahtera-api.up.railway.app/pesanan/2
 Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Miwicm9sZSI6InBlbWJlbGkiLCJpYXQiOjE3MjE5MDc5NjcsImV4cCI6MTcyMTkxMTU2N30.i0rwmg8Nl_FvYVv8JC3VCGMNSEJzintkbY92sGxxmSw
 
@@ -35,5 +35,5 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Miwicm9sZSI6I
 }
 
 ### Menghapus pesanan berdasarkan ID
-DELETE http://localhost:3000/pesanan/1
+DELETE https://kurbansejahtera-api.up.railway.app/pesanan/1
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6InBlbWJlbGkiLCJpYXQiOjE3MjE4OTQ2MTUsImV4cCI6MTcyMTg5ODIxNX0.BmWJNcswcHkDp_I-cB1PIkv1quLSDWhVnVmbqMnqhqc

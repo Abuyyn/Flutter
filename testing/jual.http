@@ -1,4 +1,4 @@
-POST http://localhost:3000/penjualan
+POST https://kurbansejahtera-api.up.railway.app/penjualan
 Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwicm9sZSI6InBlbmp1YWwiLCJpYXQiOjE3MjE5OTI5MjEsImV4cCI6MTcyMTk5NjUyMX0.e-82rhyMMcyjxqLYMFHE7oBmcEkoFJpSGwopcElio9Y
 {
@@ -10,13 +10,13 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwicm9sZSI6I
 }
 
 ### Mengambil semua penjualan
-GET http://localhost:3000/penjualan
+GET https://kurbansejahtera-api.up.railway.app/penjualan
 
 ### Mengambil penjualan berdasarkan ID
-GET http://localhost:3000/penjualan/8
+GET https://kurbansejahtera-api.up.railway.app/penjualan/8
 
 ### Memperbarui penjualan berdasarkan ID
-PUT http://localhost:3000/penjualan/8
+PUT https://kurbansejahtera-api.up.railway.app/penjualan/8
 Content-Type: application/json
 
 {
@@ -28,4 +28,4 @@ Content-Type: application/json
 }
 
 ### Menghapus penjualan berdasarkan ID
-DELETE http://localhost:3000/penjualan/2
+DELETE https://kurbansejahtera-api.up.railway.app/penjualan/2

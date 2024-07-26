@@ -1,5 +1,5 @@
 ### Register User
-POST http://localhost:3000/auth/register
+POST https://kurbansejahtera-api.up.railway.app/auth/register
 Content-Type: application/json
 
 {
@@ -12,7 +12,7 @@ Content-Type: application/json
 }
 
 ### Login User
-POST http://localhost:3000/auth/login
+POST https://kurbansejahtera-api.up.railway.app/auth/login
 Content-Type: application/json
 
 {
@@ -22,7 +22,7 @@ Content-Type: application/json
 
 
 ### Register Admin
-POST http://localhost:3000/auth/register
+POST https://kurbansejahtera-api.up.railway.app/auth/register
 Content-Type: application/json
 
 
@@ -36,7 +36,7 @@ Content-Type: application/json
 }
 
 ### Login Admin
-POST http://localhost:3000/auth/login
+POST https://kurbansejahtera-api.up.railway.app/auth/login
 Content-Type: application/json
 
 {

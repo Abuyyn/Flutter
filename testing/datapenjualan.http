@@ -1,11 +1,11 @@
 ### Mengambil semua entri DataPenjualan
-GET http://localhost:3000/datapenjualan
+GET https://kurbansejahtera-api.up.railway.app/datapenjualan
 Accept: application/json
 
 ### Mengambil DataPenjualan berdasarkan ID
-GET http://localhost:3000/datapenjualan/1
+GET https://kurbansejahtera-api.up.railway.app/datapenjualan/1
 Accept: application/json
 
 ### Menghapus DataPenjualan berdasarkan ID
-DELETE http://localhost:3000/datapenjualan/1
+DELETE https://kurbansejahtera-api.up.railway.app/datapenjualan/1
 Accept: application/json

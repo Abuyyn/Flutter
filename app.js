@@ -50,7 +50,7 @@ const dataPenjualanRouter = require('./routes/datapenjualan');
 const pesananRouter = require('./routes/pesanan');
 
 app.get('/', (req, res, next) => {
-  res.send('Selamat datang di Aplikasi Kurban Sejahtera')
+  res.send('Selamat datang di Aplikasi Qurban Sejahtera')
 })
 const PORT = process.env.PORT || 3000
 app.listen(PORT, () => {
